@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>welcome to project</title>
+   <link rel="stylesheet" type="text/css" href="indexhome.css">
+      
+   <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="'stylesheet">
+   <style type="text/css">
+   #clock {
+	   width:200px;
+	   margin: 50px;
+	   text-align:center;
+	   font-size: 90px;
+	   
+	   
+   }
+     
+   </style>
+</head>
+<body>
+   <header>
+
+          <section class="navsection">
+		       <div class="logo">
+			     <h2 style="font-size:54px">M.J  </h2>
+				 </div>
+				 <nav>
+				    <a href="#">Gallery</a>
+	                 <a href="#">About us</a>
+                       <a href="#">Welcome</a>	
+                        <a href="#">Help?</a>		
+				</nav>
+			   </div>
+			   
+		  </section>
+		  <main>
+		       <div  class="leftside"><br><br><br><br><br><br><br>
+			      <h3  >Hello</h3>
+				  <h1> I&nbsp;Am&nbsp;Titosh</h1>
+				  <h2>web developer and designer</h2></br>
+				   <a href="help.php" class="btn1">here me</a>
+				   
+				    
+			   </div>
+
+			 
+	<div id="clock"></div>
+	<script type="text/javascript">
+	
+	setInterval(displayclock, 500);
+	
+	    function displayclock (){
+			var time = new Date();
+			var hrs = time.getHours();
+			var min = time.getMinutes();
+			var sec = time.getSeconds();
+			
+		
+			
+			if (hrs > 12){
+				hrs = hrs - 12;
+
+			}
+			if (hrs == 0){
+				hrs == 12;
+			}
+			
+		
+			if (hrs < 10){
+				hrs = '0' + hrs;
+			}
+			if (min < 10){
+				min = '0' + min;
+			}
+			if (sec < 10){
+				sec = '0' + sec;
+			}
+			
+			document.getElementById('clock').innerHTML = hrs + ':' + min + ':' + sec ;
+			
+		
+		}
+		
+		
+	</script>			 
+		  
+		  
+		  </main>
+		  
+		  
+   </header>
+   
+   
+   
+</body>
+
+</html>
+
+
+
+
+
+
+
+
