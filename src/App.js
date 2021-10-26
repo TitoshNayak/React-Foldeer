@@ -1,22 +1,14 @@
-import React from 'react';
+import Header from './ProopsExample/Header';
+function App(){
 
-import Header from './Components/Header';
-import Body from './Components/Body';
-import Footer from './Components/Footer';
-
-class App extends React.Component{
-    render(){
-        return(
-            <div>
-
-                <h5> Add components</h5>
-
-                <Header />
-                <Body />
-                <Footer />
-            </div>
-        );
-    }
-
+    return(
+        <>
+        <h1>
+            App component
+            
+        </h1>
+        <Header />
+        </>
+    );
 }
 export default App;
